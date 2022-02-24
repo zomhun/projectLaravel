@@ -1,0 +1,6 @@
+# tao controller
+php artisan make:controller tenController
+# tao database->database->Migrations
+php artisan make:migration tenBang 
+# thưc thi >Migrations để sinh ra bảng trong database
+php artisan migrate

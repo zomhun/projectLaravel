@@ -1,0 +1,40 @@
+	var fullHeight = function() {
+
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight').css('height', $(window).height());
+		});
+
+	};
+	fullHeight();
+
+	$("#togg-pass-log").click(function() {
+
+	  $(this).toggleClass("fa-eye fa-eye-slash");
+	  var input = $($(this).attr("toggle"));
+	  if (input.attr("type") == "password") {
+	    input.attr("type", "text");
+	  } else {
+	    input.attr("type", "password");
+	  }
+	});
+	$("#togg-pass-sign").click(function() {
+
+		$(this).toggleClass("fa-eye fa-eye-slash");
+		var input = $($(this).attr("toggle"));
+		if (input.attr("type") == "password") {
+		  input.attr("type", "text");
+		} else {
+		  input.attr("type", "password");
+		}
+	});
+	$("#togg-pass-resign").click(function() {
+
+		$(this).toggleClass("fa-eye fa-eye-slash");
+		var input = $($(this).attr("toggle"));
+		if (input.attr("type") == "password") {
+		  input.attr("type", "text");
+		} else {
+		  input.attr("type", "password");
+		}
+	});
